@@ -12,7 +12,7 @@ class Empleado:
     def get_id(self):
         return self._id
 
-    def calcular_salario(self):  # Método que será sobrescrito (polimorfismo)
+    def calcular_salario(self):  # Metodo que será sobrescrito (polimorfismo)
         pass
 
     def mostrar_info(self):
@@ -24,10 +24,10 @@ class EmpleadoTiempoCompleto(Empleado):  # Herencia
         super().__init__(nombre, id)
         self.__salario_anual = salario_anual  # Encapsulación: atributo privado
 
-    def calcular_salario(self):  # Polimorfismo: sobrescritura de método
+    def calcular_salario(self):  # Polimorfismo: sobrescritura de metodo
         return self.__salario_anual / 12
 
-    def mostrar_info(self):  # Polimorfismo: sobrescritura de método
+    def mostrar_info(self):  # Polimorfismo: sobrescritura de metodo
         return f"{super().mostrar_info()}, Tipo: Tiempo Completo, Salario Mensual: ${self.calcular_salario():.2f}"
 
 
@@ -37,10 +37,10 @@ class EmpleadoPorHoras(Empleado):  # Herencia
         self.__tarifa_por_hora = tarifa_por_hora  # Encapsulación: atributo privado
         self.__horas_trabajadas = horas_trabajadas  # Encapsulación: atributo privado
 
-    def calcular_salario(self):  # Polimorfismo: sobrescritura de método
+    def calcular_salario(self):  # Polimorfismo: sobrescritura de metodo
         return self.__tarifa_por_hora * self.__horas_trabajadas
 
-    def mostrar_info(self):  # Polimorfismo: sobrescritura de método
+    def mostrar_info(self):  # Polimorfismo: sobrescritura de metodo
         return f"{super().mostrar_info()}, Tipo: Por Horas, Salario: ${self.calcular_salario():.2f}"
 
 
