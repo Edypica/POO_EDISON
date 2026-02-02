@@ -31,13 +31,17 @@ def mostrar_menu():
     ruta_base = os.path.dirname(os.path.abspath(__file__))
 
     unidades = {
-        '1': 'semana 2/abstraccion.py',
-        '2': 'semana 3/p_tradicional.py',
-        '3': 'semana 4/poo_tradicional.py',
-        '4': 'semana 5/unidades_de_medida.py',
-        '5': 'semana 6/ejercicio_6.py',
-        '6': 'semana 7/constructor.py'
-    }
+
+    '1': 'semana 2/abstraccion.py',
+    '2': 'semana 3/p_tradicional.py',
+    '3': 'semana 4/poo_vidareal.py',
+    '4': 'semana 5/unidades_de_medida.py',
+    '5': 'semana 6/ejercicio_6.py',
+    '6': 'semana 7/constructor.py'
+
+}
+
+
 
     while True:
         print("\nMenu Principal - Dashboard")
